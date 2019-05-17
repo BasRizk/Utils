@@ -40,6 +40,7 @@ def prepare_dirs(dirs_list, glob_dir, model_lang, version):
 # Dataset Parameters
 # =============================================================================
 glob_dir = "/mnt/datasets/"
+sec_glob_dir = "/home/ironbas3/Past_Models/"
 model_lang = "de"
 model_dir = "de_model"
 summary_dir = "de_summ"
@@ -95,7 +96,7 @@ relu_clip = 20.0
 # =============================================================================
 early_stop = True
 checkpoint_step = 1
-export_version = 1
+export_version = 4
 if early_stop:
     early_stop_stat = "--early_stop"
 else:
@@ -109,94 +110,230 @@ summary_secs = 20 # Every 20 seconds
 
 #tmp_export_dir_path, tmp_summary_dir_path, tmp_checkpoint_dir_path =\
 #    export_dir_path, summary_dir_path, checkpoint_dir_path
+def train_tune(list_of_parameters, list_of_version_num):
+    print("TODO")
 
-for dropout_rate in [0.5, 0.6, 0.7, 0.8, 0.9]:
-    version_num = "dp_" + str(dropout_rate)
-    export_dir_path, summary_dir_path, checkpoint_dir_path =\
-        prepare_dirs([model_dir,
-                      summary_dir,
-                      checkpoint_dir], glob_dir, model_lang, version_num)
-    training_command = [
-            'python', '-u', '/home/ironbas3/DeepSpeech/DeepSpeech.py',
-            '--alphabet_config_path', alphabet_config_path,
-            '--train_files', train_files_path,
-            '--dev_files', dev_files_path,
-            '--test_files', test_files_path,
-            '--train_batch_size', str(train_batch_size),
-            '--dev_batch_size', str(dev_batch_size),
-            '--test_batch_size', str(test_batch_size),
-            '--epoch', str(epoch),
-            '--n_hidden', str(n_hidden),
-            '--learning_rate', str(learning_rate),
-            '--display_step', str(display_step),
-            '--validation_step', str(validation_step),
-            '--dropout_rate', str(dropout_rate),
-            '--checkpoint_step', str(checkpoint_step),
-            '--checkpoint_dir', checkpoint_dir_path,
-            '--export_dir', export_dir_path,
-            '--summary_dir', summary_dir_path,
-            '--noexport_tflite',
-            early_stop_stat,
-            '--remove_export',
-            '--export_version', str(export_version),
-            '--lm_binary_path', lm_binary_path,
-            '--lm_trie_path', lm_trie_path,
-            '--lm_alpha', str(lm_alpha),
-            '--lm_beta', str(lm_beta)
-            ]
-   
-    print("Training with version_num = " + version_num +"\n")
-    
-    training_process = run_command(training_command)
-    
-    log_file = open(log_filepath, "w+")
+def log_training_command(training_command, log_filepath):
+    log_file = open(log_filepath, "a+")
     log_file.write(str(training_command) + ",\n")
     log_file.close()
+
+# =============================================================================
+# INCREASING BATCH SIZE FOR VERSION 3 ---- TODO NOTE LATER IN FOLDERS
+# =============================================================================
+train_batch_size = train_batch_size*2
+dev_batch_size = dev_batch_size*2
+test_batch_size = test_batch_size*2
+for dropout_rate in [0.2, 0.3, 0.4]:
+    for n_hidden in [1024]:
+        version_num = "n_hidden_" + str(n_hidden) + "_dp_" + str(dropout_rate)
+        export_dir_path, summary_dir_path, checkpoint_dir_path =\
+            prepare_dirs([model_dir,
+                          summary_dir,
+                          checkpoint_dir], sec_glob_dir, model_lang, version_num)
+        training_command = [
+                'python', '-u', '/home/ironbas3/DeepSpeech/DeepSpeech.py',
+                '--alphabet_config_path', alphabet_config_path,
+                '--train_files', train_files_path,
+                '--dev_files', dev_files_path,
+                '--test_files', test_files_path,
+                '--train_batch_size', str(train_batch_size),
+                '--dev_batch_size', str(dev_batch_size),
+                '--test_batch_size', str(test_batch_size),
+                '--epoch', str(epoch),
+                '--n_hidden', str(n_hidden),
+                '--learning_rate', str(learning_rate),
+                '--display_step', str(display_step),
+                '--validation_step', str(validation_step),
+                '--dropout_rate', str(dropout_rate),
+                '--checkpoint_step', str(checkpoint_step),
+                '--checkpoint_dir', checkpoint_dir_path,
+                '--export_dir', export_dir_path,
+                '--summary_dir', summary_dir_path,
+                '--noexport_tflite',
+                early_stop_stat,
+                #'--remove_export',
+                '--export_version', str(export_version),
+                '--lm_binary_path', lm_binary_path,
+                '--lm_trie_path', lm_trie_path,
+                '--lm_alpha', str(lm_alpha),
+                '--lm_beta', str(lm_beta)
+                ]
+       
+        print("\n>>> Training with version_num: " + version_num +"\n")
     
-dropout_rate = 0.5
-for n_hidden in [256, 512, 670, 1024, 4096, 8192, 6826]:
-    version_num = "n_hidden_" + str(n_hidden)
-    export_dir_path, summary_dir_path, checkpoint_dir_path =\
-        prepare_dirs([model_dir,
-                      summary_dir,
-                      checkpoint_dir], glob_dir, model_lang, version_num)
-    training_command = [
-            'python', '-u', '/home/ironbas3/DeepSpeech/DeepSpeech.py',
-            '--alphabet_config_path', alphabet_config_path,
-            '--train_files', train_files_path,
-            '--dev_files', dev_files_path,
-            '--test_files', test_files_path,
-            '--train_batch_size', str(train_batch_size),
-            '--dev_batch_size', str(dev_batch_size),
-            '--test_batch_size', str(test_batch_size),
-            '--epoch', str(epoch),
-            '--n_hidden', str(n_hidden),
-            '--learning_rate', str(learning_rate),
-            '--display_step', str(display_step),
-            '--validation_step', str(validation_step),
-            '--dropout_rate', str(dropout_rate),
-            '--checkpoint_step', str(checkpoint_step),
-            '--checkpoint_dir', checkpoint_dir_path,
-            '--export_dir', export_dir_path,
-            '--summary_dir', summary_dir_path,
-            '--noexport_tflite',
-            early_stop_stat,
-            '--remove_export',
-            '--export_version', str(export_version),
-            '--lm_binary_path', lm_binary_path,
-            '--lm_trie_path', lm_trie_path,
-            '--lm_alpha', str(lm_alpha),
-            '--lm_beta', str(lm_beta)
-            ]
-   
-    print("Training with version_num = " + version_num +"\n")
-    
-    training_process = run_command(training_command)
-    
-    log_file = open(log_filepath, "w+")
-    log_file.write(str(training_command) + ",\n")
-    log_file.close()
-    
+        training_process = run_command(training_command)
+        log_training_command(training_command, log_filepath)
+
+#for dropout_rate in [0.2, 0.3, 0.4, 0.5]:
+#    for n_hidden in [2048]:
+#        version_num = "n_hidden_" + str(n_hidden) + "_dp_" + str(dropout_rate)
+#        export_dir_path, summary_dir_path, checkpoint_dir_path =\
+#            prepare_dirs([model_dir,
+#                          summary_dir,
+#                          checkpoint_dir], sec_glob_dir, model_lang, version_num)
+#        training_command = [
+#                'python', '-u', '/home/ironbas3/DeepSpeech/DeepSpeech.py',
+#                '--alphabet_config_path', alphabet_config_path,
+#                '--train_files', train_files_path,
+#                '--dev_files', dev_files_path,
+#                '--test_files', test_files_path,
+#                '--train_batch_size', str(train_batch_size),
+#                '--dev_batch_size', str(dev_batch_size),
+#                '--test_batch_size', str(test_batch_size),
+#                '--epoch', str(epoch),
+#                '--n_hidden', str(n_hidden),
+#                '--learning_rate', str(learning_rate),
+#                '--display_step', str(display_step),
+#                '--validation_step', str(validation_step),
+#                '--dropout_rate', str(dropout_rate),
+#                '--checkpoint_step', str(checkpoint_step),
+#                '--checkpoint_dir', checkpoint_dir_path,
+#                '--export_dir', export_dir_path,
+#                '--summary_dir', summary_dir_path,
+#                '--noexport_tflite',
+#                early_stop_stat,
+#                #'--remove_export',
+#                '--export_version', str(export_version),
+#                '--lm_binary_path', lm_binary_path,
+#                '--lm_trie_path', lm_trie_path,
+#                '--lm_alpha', str(lm_alpha),
+#                '--lm_beta', str(lm_beta)
+#                ]
+#       
+#        print("\n>>> Training with version_num: " + version_num +"\n")
+#    
+#        training_process = run_command(training_command)
+#        log_training_command(training_command, log_filepath)
+        
+#for dropout_rate in [0.4, 0.5]:
+#    for n_hidden in [4096]:
+#        version_num = "n_hidden_" + str(n_hidden) + "_dp_" + str(dropout_rate)
+#        export_dir_path, summary_dir_path, checkpoint_dir_path =\
+#            prepare_dirs([model_dir,
+#                          summary_dir,
+#                          checkpoint_dir], sec_glob_dir, model_lang, version_num)
+#        training_command = [
+#                'python', '-u', '/home/ironbas3/DeepSpeech/DeepSpeech.py',
+#                '--alphabet_config_path', alphabet_config_path,
+#                '--train_files', train_files_path,
+#                '--dev_files', dev_files_path,
+#                '--test_files', test_files_path,
+#                '--train_batch_size', str(train_batch_size),
+#                '--dev_batch_size', str(dev_batch_size),
+#                '--test_batch_size', str(test_batch_size),
+#                '--epoch', str(epoch),
+#                '--n_hidden', str(n_hidden),
+#                '--learning_rate', str(learning_rate),
+#                '--display_step', str(display_step),
+#                '--validation_step', str(validation_step),
+#                '--dropout_rate', str(dropout_rate),
+#                '--checkpoint_step', str(checkpoint_step),
+#                '--checkpoint_dir', checkpoint_dir_path,
+#                '--export_dir', export_dir_path,
+#                '--summary_dir', summary_dir_path,
+#                '--noexport_tflite',
+#                early_stop_stat,
+#                #'--remove_export',
+#                '--export_version', str(export_version),
+#                '--lm_binary_path', lm_binary_path,
+#                '--lm_trie_path', lm_trie_path,
+#                '--lm_alpha', str(lm_alpha),
+#                '--lm_beta', str(lm_beta)
+#                ]
+#       
+#        print("\n>>> Training with version_num: " + version_num +"\n")
+#    
+#        training_process = run_command(training_command)
+#        log_training_command(training_command, log_filepath)
+
+#for dropout_rate in [0.2, 0.3]:
+#    for n_hidden in [1024, 2048, 4096]:
+#        for learning_rate in [0.01, 0.001, 0.00001]:
+#            version_num = "lr_" + str(learning_rate) + "_n_hidden_" + str(n_hidden) + "_dp_" + str(dropout_rate)
+#            export_dir_path, summary_dir_path, checkpoint_dir_path =\
+#                prepare_dirs([model_dir,
+#                              summary_dir,
+#                              checkpoint_dir], sec_glob_dir, model_lang, version_num)
+#            training_command = [
+#                    'python', '-u', '/home/ironbas3/DeepSpeech/DeepSpeech.py',
+#                    '--alphabet_config_path', alphabet_config_path,
+#                    '--train_files', train_files_path,
+#                    '--dev_files', dev_files_path,
+#                    '--test_files', test_files_path,
+#                    '--train_batch_size', str(train_batch_size),
+#                    '--dev_batch_size', str(dev_batch_size),
+#                    '--test_batch_size', str(test_batch_size),
+#                    '--epoch', str(epoch),
+#                    '--n_hidden', str(n_hidden),
+#                    '--learning_rate', str(learning_rate),
+#                    '--display_step', str(display_step),
+#                    '--validation_step', str(validation_step),
+#                    '--dropout_rate', str(dropout_rate),
+#                    '--checkpoint_step', str(checkpoint_step),
+#                    '--checkpoint_dir', checkpoint_dir_path,
+#                    '--export_dir', export_dir_path,
+#                    '--summary_dir', summary_dir_path,
+#                    '--noexport_tflite',
+#                    early_stop_stat,
+#                    #'--remove_export',
+#                    '--export_version', str(export_version),
+#                    '--lm_binary_path', lm_binary_path,
+#                    '--lm_trie_path', lm_trie_path,
+#                    '--lm_alpha', str(lm_alpha),
+#                    '--lm_beta', str(lm_beta)
+#                    ]
+#           
+#            print("\n>>> Training with version_num: " + version_num +"\n")
+#        
+#            training_process = run_command(training_command)
+#            log_training_command(training_command, log_filepath)
+
+for dropout_rate in [0.2, 0.3, 0.4]:
+    for n_hidden in [1024, 2048, 4096]:
+        for train_batch_size in [3, 12, 24]:
+            dev_batch_size = train_batch_size*2
+            test_batch_size = train_batch_size*2
+            version_num = "tr_batch_" + str(train_batch_size) + "_n_hidden_" + str(n_hidden) + "_dp_" + str(dropout_rate)
+            export_dir_path, summary_dir_path, checkpoint_dir_path =\
+                prepare_dirs([model_dir,
+                              summary_dir,
+                              checkpoint_dir], sec_glob_dir, model_lang, version_num)
+            training_command = [
+                    'python', '-u', '/home/ironbas3/DeepSpeech/DeepSpeech.py',
+                    '--alphabet_config_path', alphabet_config_path,
+                    '--train_files', train_files_path,
+                    '--dev_files', dev_files_path,
+                    '--test_files', test_files_path,
+                    '--train_batch_size', str(train_batch_size),
+                    '--dev_batch_size', str(dev_batch_size),
+                    '--test_batch_size', str(test_batch_size),
+                    '--epoch', str(epoch),
+                    '--n_hidden', str(n_hidden),
+                    '--learning_rate', str(learning_rate),
+                    '--display_step', str(display_step),
+                    '--validation_step', str(validation_step),
+                    '--dropout_rate', str(dropout_rate),
+                    '--checkpoint_step', str(checkpoint_step),
+                    '--checkpoint_dir', checkpoint_dir_path,
+                    '--export_dir', export_dir_path,
+                    '--summary_dir', summary_dir_path,
+                    '--noexport_tflite',
+                    early_stop_stat,
+                    #'--remove_export',
+                    '--export_version', str(export_version),
+                    '--lm_binary_path', lm_binary_path,
+                    '--lm_trie_path', lm_trie_path,
+                    '--lm_alpha', str(lm_alpha),
+                    '--lm_beta', str(lm_beta)
+                    ]
+           
+            print("\n>>> Training with version_num: " + version_num +"\n")
+        
+            training_process = run_command(training_command)
+            log_training_command(training_command, log_filepath)
+            
+        
 print("..DONE..")
     
 

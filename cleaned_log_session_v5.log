@@ -1,0 +1,1536 @@
+Script started on 2019-05-16 18:50:22+0200
+(base) ]0;ironbas3@ironbas3-Hyrican-PC: ~/utils[01;32mironbas3@ironbas3-Hyrican-PC[00m:[01;34m~/utils[00m$ cod[Knda activaet[K[Kte deepspeechTrain
+(deepspeechTrain) ]0;ironbas3@ironbas3-Hyrican-PC: ~/utils[01;32mironbas3@ironbas3-Hyrican-PC[00m:[01;34m~/utils[00m$ conda activate deepspeechTrainpython -u generate_deepspeech_train.py && exit
+>>>>>>>>>>>>>>>>.. TO BE RUNNING MORE >>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>.. TO BE RUNNING MORE >>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>.. TO BE RUNNING MORE >>>>>>>>>>>>>>>>>>>>
+Training number 1
+Version directory already exists
+>>> Training with version_num: n_hidden_1024_dp_0.4
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:00:20 Time:  0:00:20
+b'Decoding predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:01:19 Time:  0:01:19
+b'Test - WER: 0.857075, CER: 26.546816, loss: 100.139824'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 17.000000, loss: 38.155987'
+b' - src: "zur einkaufsliste hinzufugen"'
+b' - res: "vor ein oft der in offenen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 14.000000, loss: 38.849953'
+b' - src: "rezeptliste anzeigen"'
+b' - res: "das ist der einzige"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 16.000000, loss: 50.785820'
+b' - src: "zur bibliothek hinzufugen"'
+b' - res: "so wie sie sein zu fegen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.800000, CER: 29.000000, loss: 125.632362'
+b' - src: "vermutlich ist die zylinderkopfdichtung undicht"'
+b' - res: "ist die zu den er auf die schon und dich"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 18.000000, loss: 76.164314'
+b' - src: "insbesondere keine topflappen"'
+b' - res: "dient das andere einen den"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 19.000000, loss: 52.553509'
+b' - src: "dies bitte zum kalender hinzufugen"'
+b' - res: "des et de zogen an ein zu fuhren"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 23.000000, loss: 82.143066'
+b' - src: "unsere ausstellung ist weltweit einzigartig"'
+b' - res: "und auch stellen ist werfe ein sich ab ich"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 4.000000, loss: 13.616052'
+b' - src: "weitermachen bitte"'
+b' - res: "weiter machen die"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 7.000000, loss: 19.698147'
+b' - src: "wagen vorheizen"'
+b' - res: "machen vor allen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 10.000000, loss: 20.575005'
+b' - src: "wunschliste anzeigen"'
+b' - res: "mischet an ein"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_1024_dp_0.4/de_model_n_hidden_1024_dp_0.4'
+Training number 2
+Version directory already exists
+>>> Training with version_num: n_hidden_2048_dp_0.5
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 18...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:05 ETA:  00:00:00
+b'I Training of Epoch 18 - loss: 57.191414'
+100% (415 of 415) |######################| Elapsed Time: 0:04:05 Time:  0:04:05
+b'I Validating epoch 18...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:29 ETA:  00:00:00
+b'I Validation of Epoch 18 - loss: 95.295102'
+100% (180 of 180) |######################| Elapsed Time: 0:00:30 Time:  0:00:30
+b'I Training epoch 19...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 ETA:  00:00:00
+b'I Training of Epoch 19 - loss: 56.895051'
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 Time:  0:04:10
+b'I Validating epoch 19...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:31 ETA:  00:00:00
+b'I Validation of Epoch 19 - loss: 103.956168'
+100% (180 of 180) |######################| Elapsed Time: 0:00:33 Time:  0:00:33
+b'I Training epoch 20...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:11 ETA:  00:00:00
+b'I Training of Epoch 20 - loss: 54.401065'
+100% (415 of 415) |######################| Elapsed Time: 0:04:11 Time:  0:04:11
+b'I Validating epoch 20...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:31 ETA:  00:00:00
+b'I Validation of Epoch 20 - loss: 100.924296'
+100% (180 of 180) |######################| Elapsed Time: 0:00:32 Time:  0:00:32
+b'I Training epoch 21...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 ETA:  00:00:00
+b'I Training of Epoch 21 - loss: 52.061745'
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 Time:  0:04:10
+b'I Validating epoch 21...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:31 ETA:  00:00:00
+b'I Validation of Epoch 21 - loss: 100.868358'
+100% (180 of 180) |######################| Elapsed Time: 0:00:32 Time:  0:00:32
+b'I Training epoch 22...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:11 ETA:  00:00:00
+b'I Training of Epoch 22 - loss: 49.946412'
+100% (415 of 415) |######################| Elapsed Time: 0:04:11 Time:  0:04:11
+b'I Validating epoch 22...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:29 ETA:  00:00:00
+b'I Validation of Epoch 22 - loss: 107.078867'
+b'I Early stop triggered as (for last 4 steps) validation loss: 107.078867 with standard deviation: 1.442603 and mean: 101.916274'
+b'I FINISHED Optimization - training time: 0:23:30'
+100% (180 of 180) |######################| Elapsed Time: 0:00:29 Time:  0:00:29
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:00:49 Time:  0:00:49
+b'Decoding predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:01:20 Time:  0:01:20
+b'Test - WER: 0.858868, CER: 26.819757, loss: 115.492676'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.500000, CER: 9.000000, loss: 34.072441'
+b' - src: "klimaanlage einschalten"'
+b' - res: "im an da ein schelten"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.500000, CER: 13.000000, loss: 50.107304'
+b' - src: "ventilator einschalten"'
+b' - res: "on a ein schaut der"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 7.000000, loss: 25.727177'
+b' - src: "lesezeichen anzeigen"'
+b' - res: "dieser reichen an einen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 7.000000, loss: 27.021610'
+b' - src: "rezeptliste anzeigen"'
+b' - res: "derzeit liste ein zeigen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 11.000000, loss: 38.571598'
+b' - src: "not macht erfinderisch"'
+b' - res: "nur mit der finden s"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 17.000000, loss: 51.717972'
+b' - src: "gibt es dafur auch eine tastenkombination"'
+b' - res: "die ist da fuhr auf einen tasten kommen an in"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 18.000000, loss: 70.255592'
+b' - src: "mozilla firefox schlieen"'
+b' - res: "auf den nahen vor schlechten"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 8.000000, loss: 21.764645'
+b' - src: "wagen vorheizen"'
+b' - res: "nachdem vor ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 9.000000, loss: 22.142536'
+b' - src: "wunschliste anzeigen"'
+b' - res: "mischte an ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 7.000000, loss: 23.435886'
+b' - src: "alles entfernen"'
+b' - res: "als ein fahren"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_2048_dp_0.5/de_model_n_hidden_2048_dp_0.5'
+Training number 3
+Version directory already exists
+>>> Training with version_num: n_hidden_4096_dp_0.5
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 9...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:32 ETA:  00:00:00
+b'I Training of Epoch 9 - loss: 65.199655'
+100% (415 of 415) |######################| Elapsed Time: 0:15:32 Time:  0:15:32
+b'I Validating epoch 9...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:41 ETA:  00:00:00
+b'I Validation of Epoch 9 - loss: 103.553088'
+100% (180 of 180) |######################| Elapsed Time: 0:01:46 Time:  0:01:46
+b'I Training epoch 10...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:08 ETA:  00:00:00
+b'I Training of Epoch 10 - loss: 63.169460'
+100% (415 of 415) |######################| Elapsed Time: 0:16:09 Time:  0:16:09
+b'I Validating epoch 10...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:49 ETA:  00:00:00
+b'I Validation of Epoch 10 - loss: 109.683599'
+100% (180 of 180) |######################| Elapsed Time: 0:01:53 Time:  0:01:53
+b'I Training epoch 11...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:09 ETA:  00:00:00
+b'I Training of Epoch 11 - loss: 59.002448'
+100% (415 of 415) |######################| Elapsed Time: 0:16:10 Time:  0:16:10
+b'I Validating epoch 11...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:49 ETA:  00:00:00
+b'I Validation of Epoch 11 - loss: 109.014138'
+100% (180 of 180) |######################| Elapsed Time: 0:01:53 Time:  0:01:53
+b'I Training epoch 12...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:00 ETA:  00:00:00
+b'I Training of Epoch 12 - loss: 55.057674'
+100% (415 of 415) |######################| Elapsed Time: 0:16:02 Time:  0:16:02
+b'I Validating epoch 12...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:57 ETA:  00:00:00
+b'I Validation of Epoch 12 - loss: 106.576300'
+100% (180 of 180) |######################| Elapsed Time: 0:02:01 Time:  0:02:01
+b'I Training epoch 13...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:02 ETA:  00:00:00
+b'I Training of Epoch 13 - loss: 51.201364'
+100% (415 of 415) |######################| Elapsed Time: 0:16:03 Time:  0:16:03
+b'I Validating epoch 13...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:49 ETA:  00:00:00
+b'I Validation of Epoch 13 - loss: 108.037879'
+100% (180 of 180) |######################| Elapsed Time: 0:01:53 Time:  0:01:53
+b'I Training epoch 14...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:08 ETA:  00:00:00
+b'I Training of Epoch 14 - loss: 47.707296'
+100% (415 of 415) |######################| Elapsed Time: 0:16:09 Time:  0:16:09
+b'I Validating epoch 14...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:49 ETA:  00:00:00
+b'I Validation of Epoch 14 - loss: 104.915198'
+100% (180 of 180) |######################| Elapsed Time: 0:01:53 Time:  0:01:53
+b'I Training epoch 15...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:12 ETA:  00:00:00
+b'I Training of Epoch 15 - loss: 43.478349'
+100% (415 of 415) |######################| Elapsed Time: 0:16:13 Time:  0:16:13
+b'I Validating epoch 15...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:49 ETA:  00:00:00
+b'I Validation of Epoch 15 - loss: 109.206949'
+b'I Early stop triggered as (for last 4 steps) validation loss: 109.206949 with standard deviation: 1.275697 and mean: 106.509792'
+b'I FINISHED Optimization - training time: 2:05:34'
+100% (180 of 180) |######################| Elapsed Time: 0:01:49 Time:  0:01:49
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:03:07 Time:  0:03:07
+b'Decoding predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:01:19 Time:  0:01:19
+b'Test - WER: 0.854982, CER: 26.230805, loss: 116.522690'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 9.000000, loss: 19.742552'
+b' - src: "wunschliste anzeigen"'
+b' - res: "man schlicht an seinen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 11.000000, loss: 46.577976'
+b' - src: "klimaanlage einschalten"'
+b' - res: "die man alle einschreiten"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 11.000000, loss: 54.952660'
+b' - src: "ventilator einschalten"'
+b' - res: "wo aber ein schaute"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.857143, CER: 41.000000, loss: 132.973663'
+b' - src: "metasuchmaschinen bundeln die ergebnisse mehrerer unabhangiger suchmaschinen"'
+b' - res: "weil da so mal schieden wenn die gemessen mehr und er sucht man schien"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.800000, CER: 21.000000, loss: 90.937943'
+b' - src: "eine sorgfaltige arbeitsweise wird erwartet"'
+b' - res: "ein so war die aber zu so bitter wartet"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.750000, CER: 15.000000, loss: 57.682590'
+b' - src: "immerhin vier neue mitteilungen"'
+b' - res: "im in der nun teil um in"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 16.000000, loss: 57.751884'
+b' - src: "ignoriere sie einfach"'
+b' - res: "die man ihr sein war"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 15.000000, loss: 82.373169'
+b' - src: "insbesondere keine topflappen"'
+b' - res: "in des anderer kein der"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.555556, CER: 48.000000, loss: 215.574448'
+b' - src: "im sturzflug erreichen steinadler geschwindigkeiten von uber dreihundert stundenkilometern"'
+b' - res: "info fuga reichen stein at a schon ich kein von bereits und er mit am"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 7.000000, loss: 16.708874'
+b' - src: "alles entfernen"'
+b' - res: "als ein fahren"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_4096_dp_0.5/de_model_n_hidden_4096_dp_0.5'
+>>>>>>>>>>>>>>>>.. INCREASING BATCH SIZE >>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>.. INCREASING BATCH SIZE >>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>.. INCREASING BATCH SIZE >>>>>>>>>>>>>>>>>>>>
+Training number 4
+Version directory already exists
+>>> Training with version_num: n_hidden_1024_dp_0.2
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:00:12 Time:  0:00:12
+b'Decoding predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:01:12 Time:  0:01:12
+b'Test - WER: 0.875187, CER: 27.295880, loss: 112.306137'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 12.000000, loss: 38.595066'
+b' - src: "lesezeichen anzeigen"'
+b' - res: "die welche er eine"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 13.000000, loss: 44.712521'
+b' - src: "batterie anzeigen"'
+b' - res: "bei der er zu"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 13.000000, loss: 48.079884'
+b' - src: "ventilator einschalten"'
+b' - res: "wo war ein heute"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 17.000000, loss: 66.715347'
+b' - src: "mozilla firefox schlieen"'
+b' - res: "auf ihn auf verlor schlechten"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 20.000000, loss: 83.432938'
+b' - src: "unsere ausstellung ist weltweit einzigartig"'
+b' - res: "unser aufstellen es will fehlt ein sich ich"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 17.000000, loss: 90.869965'
+b' - src: "der doktor diagnostizierte eine blasenentzundung"'
+b' - res: "der die er das i zierte eine blasen zu der"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 7.000000, loss: 22.518774'
+b' - src: "wagen vorheizen"'
+b' - res: "machen vor allen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 7.000000, loss: 23.266768'
+b' - src: "stoppuhr anhalten"'
+b' - res: "star an allen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 9.000000, loss: 25.354454'
+b' - src: "wunschliste anzeigen"'
+b' - res: "mischte an seinen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 12.000000, loss: 26.627991'
+b' - src: "einstellungen anzeigen"'
+b' - res: "ein scheuer einen"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_1024_dp_0.2/de_model_n_hidden_1024_dp_0.2'
+Training number 5
+Version directory already exists
+>>> Training with version_num: n_hidden_2048_dp_0.2
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 23...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:04 ETA:  00:00:00
+b'I Training of Epoch 23 - loss: 29.627387'
+100% (208 of 208) |######################| Elapsed Time: 0:02:04 Time:  0:02:04
+b'I Validating epoch 23...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:16 ETA:  00:00:00
+b'I Validation of Epoch 23 - loss: 98.637241'
+100% (90 of 90) |########################| Elapsed Time: 0:00:17 Time:  0:00:17
+b'I Training epoch 24...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 ETA:  00:00:00
+b'I Training of Epoch 24 - loss: 25.961816'
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 Time:  0:02:10
+b'I Validating epoch 24...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:16 ETA:  00:00:00
+b'I Validation of Epoch 24 - loss: 114.288170'
+100% (90 of 90) |########################| Elapsed Time: 0:00:17 Time:  0:00:17
+b'I Training epoch 25...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 ETA:  00:00:00
+b'I Training of Epoch 25 - loss: 22.175850'
+100% (208 of 208) |######################| Elapsed Time: 0:02:11 Time:  0:02:11
+b'I Validating epoch 25...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 ETA:  00:00:00
+b'I Validation of Epoch 25 - loss: 121.512953'
+100% (90 of 90) |########################| Elapsed Time: 0:00:19 Time:  0:00:19
+b'I Training epoch 26...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 ETA:  00:00:00
+b'I Training of Epoch 26 - loss: 19.456029'
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 Time:  0:02:10
+b'I Validating epoch 26...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 ETA:  00:00:00
+b'I Validation of Epoch 26 - loss: 125.298152'
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 Time:  0:00:18
+b'I Early stop triggered as (for last 4 steps) validation loss: 125.298152 with standard deviation: 9.547817 and mean: 111.479455'
+b'I FINISHED Optimization - training time: 0:09:51'
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:00:30 Time:  0:00:30
+b'Decoding predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:01:23 Time:  0:01:23
+b'Test - WER: 0.881702, CER: 24.250468, loss: 131.494766'
+b'--------------------------------------------------------------------------------'
+b'WER: 3.000000, CER: 13.000000, loss: 69.550362'
+b' - src: "rezeptliste anzeigen"'
+b' - res: "der elf ist er ein seiten"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.500000, CER: 10.000000, loss: 58.354633'
+b' - src: "ventilator einschalten"'
+b' - res: "von eau vor ein schaute"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 6.000000, loss: 19.536520'
+b' - src: "lesezeichen anzeigen"'
+b' - res: "diese zeichen ein zeigen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 9.000000, loss: 34.746380'
+b' - src: "wunschliste anzeigen"'
+b' - res: "min schwester an seinen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 11.000000, loss: 37.438995'
+b' - src: "akkuladestand anzeigen"'
+b' - res: "au lait and einsteigen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 8.000000, loss: 45.027168'
+b' - src: "wagen vorheizen"'
+b' - res: "nach den vor ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 10.000000, loss: 54.030548'
+b' - src: "ruckgangig machen"'
+b' - res: "gute weg mach ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 12.000000, loss: 58.327984'
+b' - src: "bitte wiederholen"'
+b' - res: "ich e di kacho"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 19.000000, loss: 108.562698'
+b' - src: "eine sorgfaltige arbeitsweise wird erwartet"'
+b' - res: "ein so war die ja aber zu so wird er wartet"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 20.000000, loss: 112.213631'
+b' - src: "mozilla firefox offnen"'
+b' - res: "und sie an oo voter von"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_2048_dp_0.2/de_model_n_hidden_2048_dp_0.2'
+Training number 6
+Version directory already exists
+>>> Training with version_num: n_hidden_1024_dp_0.3
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:00:12 Time:  0:00:12
+b'Decoding predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:01:16 Time:  0:01:16
+b'Test - WER: 0.854086, CER: 25.314139, loss: 108.018341'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 10.000000, loss: 29.357443'
+b' - src: "rezeptliste anzeigen"'
+b' - res: "die ist an ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 19.000000, loss: 78.965477'
+b' - src: "insbesondere keine topflappen"'
+b' - res: "ist der von der kein defekt"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.800000, CER: 22.000000, loss: 80.251465'
+b' - src: "unsere ausstellung ist weltweit einzigartig"'
+b' - res: "unser aufstellen und ist wellig fehlt ein sich ab ich"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.800000, CER: 28.000000, loss: 113.610596'
+b' - src: "vermutlich ist die zylinderkopfdichtung undicht"'
+b' - res: "du utis die zu den der oft die schon endlich"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.750000, CER: 15.000000, loss: 66.707108'
+b' - src: "immerhin vier neue mitteilungen"'
+b' - res: "immer ein der nun die alle in"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 19.000000, loss: 55.191147'
+b' - src: "zur einkaufsliste hinzufugen"'
+b' - res: "ein of ist deren tun"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 17.000000, loss: 64.263756'
+b' - src: "weshalb mochtest du nach bergheim"'
+b' - res: "es hat mich ich um acht wer kein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 23.000000, loss: 86.031334'
+b' - src: "moderne compiler ignorieren dies ohnehin"'
+b' - res: "und er kommt eine nach ihren diesen in"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 5.000000, loss: 8.914857'
+b' - src: "weitermachen bitte"'
+b' - res: "weiter machen weiter"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 6.000000, loss: 13.220203'
+b' - src: "alles entfernen"'
+b' - res: "als ein werden"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_1024_dp_0.3/de_model_n_hidden_1024_dp_0.3'
+Training number 7
+Version directory already exists
+>>> Training with version_num: n_hidden_2048_dp_0.3
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 25...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:04 ETA:  00:00:00
+b'I Training of Epoch 25 - loss: 39.489346'
+100% (208 of 208) |######################| Elapsed Time: 0:02:04 Time:  0:02:04
+b'I Validating epoch 25...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:16 ETA:  00:00:00
+b'I Validation of Epoch 25 - loss: 89.725936'
+100% (90 of 90) |########################| Elapsed Time: 0:00:17 Time:  0:00:17
+b'I Training epoch 26...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 ETA:  00:00:00
+b'I Training of Epoch 26 - loss: 37.497287'
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 Time:  0:02:10
+b'I Validating epoch 26...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 ETA:  00:00:00
+b'I Validation of Epoch 26 - loss: 102.862845'
+100% (90 of 90) |########################| Elapsed Time: 0:00:19 Time:  0:00:19
+b'I Training epoch 27...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 ETA:  00:00:00
+b'I Training of Epoch 27 - loss: 34.186133'
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 Time:  0:02:10
+b'I Validating epoch 27...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 ETA:  00:00:00
+b'I Validation of Epoch 27 - loss: 107.561216'
+100% (90 of 90) |########################| Elapsed Time: 0:00:19 Time:  0:00:19
+b'I Training epoch 28...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 ETA:  00:00:00
+b'I Training of Epoch 28 - loss: 31.107754'
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 Time:  0:02:10
+b'I Validating epoch 28...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 ETA:  00:00:00
+b'I Validation of Epoch 28 - loss: 113.197740'
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 Time:  0:00:18b'I Early stop triggered as (for last 4 steps) validation loss: 113.197740 with standard deviation: 7.547996 and mean: 100.049999'
+b'I FINISHED Optimization - training time: 0:09:51'
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:00:30 Time:  0:00:30
+b'Decoding predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:01:18 Time:  0:01:18
+b'Test - WER: 0.856178, CER: 25.004213, loss: 119.667351'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.500000, CER: 15.000000, loss: 38.373169'
+b' - src: "klimaanlage einschalten"'
+b' - res: "die man da ein seien"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 5.000000, loss: 19.486385'
+b' - src: "lesezeichen anzeigen"'
+b' - res: "diese zeichen an einen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 10.000000, loss: 30.641174'
+b' - src: "einstellungen anzeigen"'
+b' - res: "ein scheenen an ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 17.000000, loss: 52.223999'
+b' - src: "zur einkaufsliste hinzufugen"'
+b' - res: "zu ein oft wegen zu finden"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.800000, CER: 23.000000, loss: 94.292198'
+b' - src: "diese auenwirkung halt atomkerne zusammen"'
+b' - res: "dieser aus den wir von halte von meus an"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 13.000000, loss: 39.579147'
+b' - src: "not macht erfinderisch"'
+b' - res: "no demo der anderen s"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 20.000000, loss: 83.653564'
+b' - src: "mozilla firefox schlieen"'
+b' - res: "aus sie nach einem vorlesen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.625000, CER: 46.000000, loss: 258.478424'
+b' - src: "das audiosignal wird vierundvierzigtausendeinhundert mal pro sekunde abgetastet"'
+b' - res: "des haute singe eilt er war ich haut einer mei use oder getestet"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 21.000000, loss: 85.982437'
+b' - src: "moderne compiler ignorieren dies ohnehin"'
+b' - res: "oder er kam bei einer in diesen in"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.571429, CER: 40.000000, loss: 140.606186'
+b' - src: "metasuchmaschinen bundeln die ergebnisse mehrerer unabhangiger suchmaschinen"'
+b' - res: "wieder so machen wer der gemessen mehr und einige suchen schien"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_2048_dp_0.3/de_model_n_hidden_2048_dp_0.3'
+Training number 8
+Version directory already exists
+>>> Training with version_num: n_hidden_2048_dp_0.4
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 25...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:04 ETA:  00:00:00
+b'I Training of Epoch 25 - loss: 52.782234'
+100% (208 of 208) |######################| Elapsed Time: 0:02:04 Time:  0:02:04
+b'I Validating epoch 25...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:16 ETA:  00:00:00
+b'I Validation of Epoch 25 - loss: 93.322497'
+100% (90 of 90) |########################| Elapsed Time: 0:00:17 Time:  0:00:17
+b'I Training epoch 26...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 ETA:  00:00:00
+b'I Training of Epoch 26 - loss: 52.410998'
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 Time:  0:02:10
+b'I Validating epoch 26...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 ETA:  00:00:00
+b'I Validation of Epoch 26 - loss: 105.550691'
+100% (90 of 90) |########################| Elapsed Time: 0:00:19 Time:  0:00:19
+b'I Training epoch 27...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 ETA:  00:00:00
+b'I Training of Epoch 27 - loss: 49.642007'
+100% (208 of 208) |######################| Elapsed Time: 0:02:10 Time:  0:02:10
+b'I Validating epoch 27...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 ETA:  00:00:00
+b'I Validation of Epoch 27 - loss: 105.428743'
+100% (90 of 90) |########################| Elapsed Time: 0:00:19 Time:  0:00:19
+b'I Training epoch 28...'
+N/A% (0 of 208) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (208 of 208) |######################| Elapsed Time: 0:02:11 ETA:  00:00:00
+b'I Training of Epoch 28 - loss: 47.220300'
+100% (208 of 208) |######################| Elapsed Time: 0:02:11 Time:  0:02:11
+b'I Validating epoch 28...'
+N/A% (0 of 90) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 ETA:  00:00:00
+b'I Validation of Epoch 28 - loss: 106.338466'
+b'I Early stop triggered as (for last 4 steps) validation loss: 106.338466 with standard deviation: 5.735899 and mean: 101.433977'
+b'I FINISHED Optimization - training time: 0:09:53'
+100% (90 of 90) |########################| Elapsed Time: 0:00:18 Time:  0:00:18
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:00:30 Time:  0:00:30
+b'Decoding predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:01:14 Time:  0:01:14
+b'Test - WER: 0.857792, CER: 26.477060, loss: 113.480843'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.500000, CER: 13.000000, loss: 48.382401'
+b' - src: "ventilator einschalten"'
+b' - res: "on a eins a de"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 8.000000, loss: 19.848618'
+b' - src: "einstellungen anzeigen"'
+b' - res: "ein staunen an ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 6.000000, loss: 26.253557'
+b' - src: "event erstellen"'
+b' - res: "die seit er stellen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.800000, CER: 27.000000, loss: 134.286758'
+b' - src: "vermutlich ist die zylinderkopfdichtung undicht"'
+b' - res: "mutig die zu den er oft die so und ich"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 17.000000, loss: 62.342724'
+b' - src: "mozilla firefox schlieen"'
+b' - res: "da sie auf eine lesen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 15.000000, loss: 98.211319'
+b' - src: "insbesondere keine topflappen"'
+b' - res: "in das andere eine der"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 18.000000, loss: 58.974503'
+b' - src: "dies bitte zum kalender hinzufugen"'
+b' - res: "die sie zu den alten ein zu fuhren"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.600000, CER: 22.000000, loss: 68.922508'
+b' - src: "dies ist original lubecker marzipan"'
+b' - res: "die es so in allen bekam sie von"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.571429, CER: 36.000000, loss: 101.869270'
+b' - src: "die fenster sind aus energiespargrunden dreifach verglast"'
+b' - res: "die ferne sie da sie die sche kommen weiter vor die es"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 5.000000, loss: 13.639556'
+b' - src: "wagen vorheizen"'
+b' - res: "waren vor allen"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_2048_dp_0.4/de_model_n_hidden_2048_dp_0.4'
+Training number 9
+Version directory already exists
+>>> Training with version_num: n_hidden_4096_dp_0.4
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:01:49 Time:  0:01:49
+b'Decoding predictions...'
+N/A% (0 of 89) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (89 of 89) |########################| Elapsed Time: 0:01:20 Time:  0:01:20
+b'Test - WER: 0.865682, CER: 24.845037, loss: 135.597198'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.500000, CER: 11.000000, loss: 48.229996'
+b' - src: "rezeptliste anzeigen"'
+b' - res: "da er ist ein zeigten"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 8.000000, loss: 33.488209'
+b' - src: "lesezeichen anzeigen"'
+b' - res: "wie teichen an eigenen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 7.000000, loss: 40.530186'
+b' - src: "event erstellen"'
+b' - res: "die vert er steigen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 12.000000, loss: 40.988033'
+b' - src: "akkuladestand anzeigen"'
+b' - res: "alae stand einst ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 12.000000, loss: 54.686909'
+b' - src: "bitte wiederholen"'
+b' - res: "ich die da wurden"'
+b'--------------------------------------------------------------------------------'
+b'WER: 2.000000, CER: 16.000000, loss: 65.018562'
+b' - src: "zur einkaufsliste hinzufugen"'
+b' - res: "fein auf ist der den zogen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.750000, CER: 23.000000, loss: 134.096848'
+b' - src: "unsere schraubenschlussel sind unverwustlich"'
+b' - res: "unserer schon mit selten und fertigt ich"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 21.000000, loss: 111.535782'
+b' - src: "grundlagenforschung ist wichtig"'
+b' - res: "wo lange vor hoch recht"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 14.000000, loss: 116.453384'
+b' - src: "mozilla firefox schlieen"'
+b' - res: "ma vena fern vor schlechten"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.625000, CER: 36.000000, loss: 220.444611'
+b' - src: "der flugkapitan schaltete von autopilot auf manuelle steuerung"'
+b' - res: "er schlug an bitte entfaltet der von autobild auf man mal ich war und auf"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_n_hidden_4096_dp_0.4/de_model_n_hidden_4096_dp_0.4'
+>>>>>>>>>>>>>>>>.. INCREASING NUMBER OF EPOCHS >>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>.. INCREASING NUMBER OF EPOCHS >>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>.. INCREASING NUMBER OF EPOCHS >>>>>>>>>>>>>>>>>>>>
+Training number 10
+Version directory already exists
+>>> Training with version_num: lr_1e-05_n_hidden_1024_dp_0.2
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 30...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:04 ETA:  00:00:00
+b'I Training of Epoch 30 - loss: 98.003098'
+100% (415 of 415) |######################| Elapsed Time: 0:01:04 Time:  0:01:04
+b'I Validating epoch 30...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:11 ETA:  00:00:00
+b'I Validation of Epoch 30 - loss: 98.401501'
+100% (180 of 180) |######################| Elapsed Time: 0:00:11 Time:  0:00:11
+b'I Training epoch 31...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 31 - loss: 100.229455'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 31...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 31 - loss: 103.605088'
+100% (180 of 180) |######################| Elapsed Time: 0:00:13 Time:  0:00:13
+b'I Training epoch 32...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 32 - loss: 99.330606'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 32...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 32 - loss: 104.342380'
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 Time:  0:00:12
+b'I Training epoch 33...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 33 - loss: 98.478523'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 33...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 33 - loss: 103.085961'
+100% (180 of 180) |######################| Elapsed Time: 0:00:13 Time:  0:00:13
+b'I Training epoch 34...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 34 - loss: 97.685582'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 34...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 34 - loss: 103.415112'
+100% (180 of 180) |######################| Elapsed Time: 0:00:13 Time:  0:00:13
+b'I Training epoch 35...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 35 - loss: 96.962576'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 35...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 35 - loss: 102.243926'
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 Time:  0:00:12
+b'I Training epoch 36...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:07 ETA:  00:00:00
+b'I Training of Epoch 36 - loss: 96.190387'
+100% (415 of 415) |######################| Elapsed Time: 0:01:07 Time:  0:01:07
+b'I Validating epoch 36...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 36 - loss: 102.261143'
+100% (180 of 180) |######################| Elapsed Time: 0:00:13 Time:  0:00:13
+b'I Training epoch 37...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 37 - loss: 95.347806'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 37...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 37 - loss: 101.837988'
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 Time:  0:00:12
+b'I Training epoch 38...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 38 - loss: 94.671113'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 38...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 38 - loss: 101.323476'
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 Time:  0:00:12
+b'I Training epoch 39...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 39 - loss: 94.002158'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 39...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 39 - loss: 101.034063'
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 Time:  0:00:12
+b'I Training epoch 40...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 40 - loss: 93.181793'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 40...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 40 - loss: 100.438774'
+100% (180 of 180) |######################| Elapsed Time: 0:00:13 Time:  0:00:13
+b'I Training epoch 41...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 41 - loss: 92.649191'
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'I Validating epoch 41...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 41 - loss: 99.849488'
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 Time:  0:00:12
+b'I Training epoch 42...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:01:06 ETA:  00:00:00
+b'I Training of Epoch 42 - loss: 91.693680'
+100% (415 of 415) |######################| Elapsed Time: 0:01:07 Time:  0:01:07
+b'I Validating epoch 42...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 ETA:  00:00:00
+b'I Validation of Epoch 42 - loss: 99.965865'
+b'I Early stop triggered as (for last 4 steps) validation loss: 99.965865 with standard deviation: 0.483603 and mean: 100.440775'
+b'I FINISHED Optimization - training time: 0:17:15'
+100% (180 of 180) |######################| Elapsed Time: 0:00:12 Time:  0:00:12
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:00:20 Time:  0:00:20
+b'Decoding predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:01:06 Time:  0:01:06
+b'Test - WER: 0.947755, CER: 36.008427, loss: 103.544052'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 7.000000, loss: 26.367504'
+b' - src: "weitermachen bitte"'
+b' - res: "einen machen die"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 9.000000, loss: 31.540815'
+b' - src: "lesezeichen anzeigen"'
+b' - res: "dieser eichenen ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 11.000000, loss: 37.446621'
+b' - src: "bitte wiederholen"'
+b' - res: "die die an"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.333333, CER: 8.000000, loss: 24.186792'
+b' - src: "mein lieber scholli"'
+b' - res: "ein die schon in"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.250000, CER: 16.000000, loss: 70.602058'
+b' - src: "die spulmaschine ist fertig"'
+b' - res: "ich mache es der ich"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.250000, CER: 20.000000, loss: 78.741119'
+b' - src: "entschuldigt bitte meine verspatung"'
+b' - res: "in schlich er mein stehen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.200000, CER: 21.000000, loss: 72.550591'
+b' - src: "vitamine lassen sich billig synthetisieren"'
+b' - res: "eingelassen sich bis in die ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 6.000000, loss: 14.604190'
+b' - src: "so sei es"'
+b' - res: "seit"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 6.000000, loss: 17.987757'
+b' - src: "auto starten"'
+b' - res: "austragen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 8.000000, loss: 19.659168'
+b' - src: "alles entfernen"'
+b' - res: "als einer"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_lr_1e-05_n_hidden_1024_dp_0.2/de_model_lr_1e-05_n_hidden_1024_dp_0.2'
+Training number 11
+Version directory already exists
+>>> Training with version_num: lr_1e-05_n_hidden_2048_dp_0.2
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 27...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:02 ETA:  00:00:00
+b'I Training of Epoch 27 - loss: 77.593997'
+100% (415 of 415) |######################| Elapsed Time: 0:04:02 Time:  0:04:02
+b'I Validating epoch 27...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:30 ETA:  00:00:00
+b'I Validation of Epoch 27 - loss: 92.856258'
+100% (180 of 180) |######################| Elapsed Time: 0:00:31 Time:  0:00:31
+b'I Training epoch 28...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 ETA:  00:00:00
+b'I Training of Epoch 28 - loss: 78.559527'
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 Time:  0:04:10
+b'I Validating epoch 28...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:32 ETA:  00:00:00
+b'I Validation of Epoch 28 - loss: 99.154781'
+100% (180 of 180) |######################| Elapsed Time: 0:00:33 Time:  0:00:33
+b'I Training epoch 29...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 ETA:  00:00:00
+b'I Training of Epoch 29 - loss: 77.133770'
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 Time:  0:04:10
+b'I Validating epoch 29...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:32 ETA:  00:00:00
+b'I Validation of Epoch 29 - loss: 97.812632'
+100% (180 of 180) |######################| Elapsed Time: 0:00:33 Time:  0:00:33
+b'I Training epoch 30...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:09 ETA:  00:00:00
+b'I Training of Epoch 30 - loss: 75.899294'
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 Time:  0:04:10
+b'I Validating epoch 30...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:32 ETA:  00:00:00
+b'I Validation of Epoch 30 - loss: 97.883563'
+100% (180 of 180) |######################| Elapsed Time: 0:00:33 Time:  0:00:33
+b'I Training epoch 31...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 ETA:  00:00:00
+b'I Training of Epoch 31 - loss: 74.582348'
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 Time:  0:04:10
+b'I Validating epoch 31...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:31 ETA:  00:00:00
+b'I Validation of Epoch 31 - loss: 97.981706'
+100% (180 of 180) |######################| Elapsed Time: 0:00:32 Time:  0:00:32
+b'I Training epoch 32...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 ETA:  00:00:00
+b'I Training of Epoch 32 - loss: 73.272739'
+100% (415 of 415) |######################| Elapsed Time: 0:04:10 Time:  0:04:10
+b'I Validating epoch 32...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:00:32 ETA:  00:00:00
+b'I Validation of Epoch 32 - loss: 98.176420'
+b'I Early stop triggered as (for last 4 steps) validation loss: 98.176420 with standard deviation: 0.069321 and mean: 97.892634'
+b'I FINISHED Optimization - training time: 0:28:12'
+100% (180 of 180) |######################| Elapsed Time: 0:00:32 Time:  0:00:32
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:00:48 Time:  0:00:48
+b'Decoding predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:01:17 Time:  0:01:17
+b'Test - WER: 0.903700, CER: 30.752809, loss: 102.069756'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.666667, CER: 9.000000, loss: 23.003948'
+b' - src: "der wasserhahn tropft"'
+b' - res: "er was er an auf"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 6.000000, loss: 19.482454'
+b' - src: "weitermachen bitte"'
+b' - res: "weiter machen es"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 4.000000, loss: 21.063229'
+b' - src: "wagen vorheizen"'
+b' - res: "waren vor ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 10.000000, loss: 21.749521'
+b' - src: "wunschliste anzeigen"'
+b' - res: "und schwestern ein"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 9.000000, loss: 28.388596'
+b' - src: "lesezeichen anzeigen"'
+b' - res: "dieser zeichnen einen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 9.000000, loss: 39.546108'
+b' - src: "stoppuhr anhalten"'
+b' - res: "starb in allen"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 9.000000, loss: 41.028320'
+b' - src: "klimaanlage einschalten"'
+b' - res: "die man der einschalten"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.500000, CER: 13.000000, loss: 47.867889'
+b' - src: "die nordpassage ist eisfrei"'
+b' - res: "in no a sahen es frei"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.400000, CER: 29.000000, loss: 93.023026'
+b' - src: "neben viertaktmotoren existieren auch zweitaktmotoren"'
+b' - res: "in vier vor ein die auch zwei von"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.333333, CER: 17.000000, loss: 53.636230'
+b' - src: "neueste nachrichten anzeigen"'
+b' - res: "aus den nach innen"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_lr_1e-05_n_hidden_2048_dp_0.2/de_model_lr_1e-05_n_hidden_2048_dp_0.2'
+>>>>>>>>>>>>>>>>.. RUN FOR FIRST TIME  >>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>.. RUN FOR FIRST TIME  >>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>.. RUN FOR FIRST TIME  >>>>>>>>>>>>>>>>>>>>
+Training number 12
+Version directory already exists
+>>> Training with version_num: lr_0.01_n_hidden_4096_dp_0.2
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 9...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:18 ETA:  00:00:00
+b'I Training of Epoch 9 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:18 Time:  0:15:18
+b'I Validating epoch 9...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:41 ETA:  00:00:00
+b'I Validation of Epoch 9 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:45 Time:  0:01:45
+b'I Training epoch 10...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:54 ETA:  00:00:00
+b'I Training of Epoch 10 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 Time:  0:15:55
+b'I Validating epoch 10...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 10 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 11...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 ETA:  00:00:00
+b'I Training of Epoch 11 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:56 Time:  0:15:56
+b'I Validating epoch 11...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 11 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 12...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:47 ETA:  00:00:00
+b'I Training of Epoch 12 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 Time:  0:15:48
+b'I Validating epoch 12...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:56 ETA:  00:00:00/home/ironbas3/anaconda3/envs/deepspeechTrain/lib/python3.6/site-packages/numpy/core/_methods.py:117: RuntimeWarning: invalid value encountered in subtract
+  x = asanyarray(arr - arrmean)
+/home/ironbas3/DeepSpeech/util/coordinator.py:373: RuntimeWarning: invalid value encountered in double_scalars
+  if self._dev_losses[-1] > np.max(self._dev_losses[:-1]) or (abs(self._dev_losses[-1] - mean_loss) < FLAGS.estop_mean_thresh and std_loss < FLAGS.estop_std_thresh):
+b'I Validation of Epoch 12 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:02:00 Time:  0:02:00
+b'I Training epoch 13...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 ETA:  00:00:00
+b'I Training of Epoch 13 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:49 Time:  0:15:49
+b'I Validating epoch 13...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 13 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 14...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 ETA:  00:00:00
+b'I Training of Epoch 14 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:56 Time:  0:15:56
+b'I Validating epoch 14...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 14 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 15...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:56 ETA:  00:00:00
+b'I Training of Epoch 15 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:57 Time:  0:15:57
+b'I Validating epoch 15...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:49 ETA:  00:00:00
+b'I Validation of Epoch 15 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:53 Time:  0:01:53
+b'I Training epoch 16...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:47 ETA:  00:00:00
+b'I Training of Epoch 16 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 Time:  0:15:48
+b'I Validating epoch 16...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:56 ETA:  00:00:00
+b'I Validation of Epoch 16 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:02:00 Time:  0:02:00
+b'I Training epoch 17...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 ETA:  00:00:00
+b'I Training of Epoch 17 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:49 Time:  0:15:49
+b'I Validating epoch 17...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 17 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:53 Time:  0:01:53
+b'I Training epoch 18...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:54 ETA:  00:00:00
+b'I Training of Epoch 18 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 Time:  0:15:55
+b'I Validating epoch 18...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 18 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 19...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:54 ETA:  00:00:00
+b'I Training of Epoch 19 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:56 Time:  0:15:56
+b'I Validating epoch 19...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 19 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 20...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:56 ETA:  00:00:00
+b'I Training of Epoch 20 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:58 Time:  0:15:58
+b'I Validating epoch 20...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 20 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 21...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 ETA:  00:00:00
+b'I Training of Epoch 21 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:49 Time:  0:15:49
+b'I Validating epoch 21...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:56 ETA:  00:00:00
+b'I Validation of Epoch 21 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:02:00 Time:  0:02:00
+b'I Training epoch 22...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 ETA:  00:00:00
+b'I Training of Epoch 22 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:49 Time:  0:15:49
+b'I Validating epoch 22...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 22 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 23...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 ETA:  00:00:00
+b'I Training of Epoch 23 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:56 Time:  0:15:56
+b'I Validating epoch 23...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 23 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:53 Time:  0:01:53
+b'I Training epoch 24...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:54 ETA:  00:00:00
+b'I Training of Epoch 24 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 Time:  0:15:55
+b'I Validating epoch 24...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 24 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 25...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:47 ETA:  00:00:00
+b'I Training of Epoch 25 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 Time:  0:15:48
+b'I Validating epoch 25...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:55 ETA:  00:00:00
+b'I Validation of Epoch 25 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:02:00 Time:  0:02:00
+b'I Training epoch 26...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 ETA:  00:00:00
+b'I Training of Epoch 26 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:49 Time:  0:15:49
+b'I Validating epoch 26...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 26 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 27...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 ETA:  00:00:00
+b'I Training of Epoch 27 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:56 Time:  0:15:56
+b'I Validating epoch 27...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 27 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 28...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:56 ETA:  00:00:00
+b'I Training of Epoch 28 - loss: inf'
+100% (415 of 415) |######################| Elapsed Time: 0:15:57 Time:  0:15:57
+b'I Validating epoch 28...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 28 - loss: inf'
+100% (180 of 180) |######################| Elapsed Time: 0:01:52 Time:  0:01:52
+b'I Training epoch 29...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:48 Time:  0:15:48
+b'I Validating epoch 29...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 ETA:  00:00:00
+b'I Validation of Epoch 29 - loss: inf'
+b'I FINISHED Optimization - training time: 6:12:55'
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 Time:  0:01:48
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:03:04 Time:  0:03:04
+b'Decoding predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:04:00 Time:  0:04:00
+b'Test - WER: 1.000000, CER: 48.914326, loss: inf'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 57.000000, loss: inf'
+b' - src: "der uranus ist der siebente planet in unserem sonnensystem"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 47.000000, loss: inf'
+b' - src: "es mussen auch alle in die selbe richtung ziehen"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 37.000000, loss: inf'
+b' - src: "zieht euch bitte drauen die schuhe aus"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 18.000000, loss: inf'
+b' - src: "die uhr geht falsch"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 31.000000, loss: inf'
+b' - src: "die autobahnabfahrt nach kempten"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 81.000000, loss: inf'
+b' - src: "in kontakt mit anderen menschen zu bleiben senkt das risiko an demenz zu erkranken"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 28.000000, loss: inf'
+b' - src: "insbesondere keine topflappen"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 79.000000, loss: inf'
+b' - src: "sie werden doch nicht etwa setzte ich zum protest an doch es war bereits zu spat"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 58.000000, loss: inf'
+b' - src: "man kann stattdessen auch rapsol oder sonnenblumenol nehmen"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 28.000000, loss: inf'
+b' - src: "mir ist der appetit vergangen"'
+b' - res: "d"'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_lr_0.01_n_hidden_4096_dp_0.2/de_model_lr_0.01_n_hidden_4096_dp_0.2'
+Training number 13
+>>> Training with version_num: lr_0.001_n_hidden_4096_dp_0.2
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 0...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:22 ETA:  00:00:00
+b'I Training of Epoch 0 - loss: 215.890665'
+100% (415 of 415) |######################| Elapsed Time: 0:15:22 Time:  0:15:22
+b'I Validating epoch 0...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:43 ETA:  00:00:00
+b'I Validation of Epoch 0 - loss: 197.299630'
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 Time:  0:01:48
+b'I Training epoch 1...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:00 ETA:  00:00:00
+b'I Training of Epoch 1 - loss: 215.347087'
+100% (415 of 415) |######################| Elapsed Time: 0:16:01 Time:  0:16:01
+b'I Validating epoch 1...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:51 ETA:  00:00:00
+b'I Validation of Epoch 1 - loss: 209.151930'
+100% (180 of 180) |######################| Elapsed Time: 0:01:55 Time:  0:01:55
+b'I Training epoch 2...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:01 ETA:  00:00:00
+b'I Training of Epoch 2 - loss: 215.278721'
+100% (415 of 415) |######################| Elapsed Time: 0:16:02 Time:  0:16:02
+b'I Validating epoch 2...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:51 ETA:  00:00:00
+b'I Validation of Epoch 2 - loss: 211.355987'
+100% (180 of 180) |######################| Elapsed Time: 0:01:55 Time:  0:01:55
+b'I Training epoch 3...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:54 ETA:  00:00:00
+b'I Training of Epoch 3 - loss: 215.270159'
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 Time:  0:15:55
+b'I Validating epoch 3...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:58 ETA:  00:00:00
+b'I Validation of Epoch 3 - loss: 209.598066'
+100% (180 of 180) |######################| Elapsed Time: 0:02:03 Time:  0:02:03
+b'I Training epoch 4...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:54 ETA:  00:00:00
+b'I Training of Epoch 4 - loss: 214.829663'
+100% (415 of 415) |######################| Elapsed Time: 0:15:55 Time:  0:15:55
+b'I Validating epoch 4...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:51 ETA:  00:00:00
+b'I Validation of Epoch 4 - loss: 209.857300'
+100% (180 of 180) |######################| Elapsed Time: 0:01:55 Time:  0:01:55
+b'I Training epoch 5...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:02 ETA:  00:00:00
+b'I Training of Epoch 5 - loss: 214.756981'
+100% (415 of 415) |######################| Elapsed Time: 0:16:03 Time:  0:16:03
+b'I Validating epoch 5...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:51 ETA:  00:00:00
+b'I Validation of Epoch 5 - loss: 208.944822'
+100% (180 of 180) |######################| Elapsed Time: 0:01:55 Time:  0:01:55
+b'I Training epoch 6...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:16:03 ETA:  00:00:00
+b'I Training of Epoch 6 - loss: 214.619745'
+100% (415 of 415) |######################| Elapsed Time: 0:16:04 Time:  0:16:04
+b'I Validating epoch 6...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:51 ETA:  00:00:00
+b'I Validation of Epoch 6 - loss: 210.421633'
+b'I Early stop triggered as (for last 4 steps) validation loss: 210.421633 with standard deviation: 0.383919 and mean: 209.466729'
+b'I FINISHED Optimization - training time: 2:04:53'
+100% (180 of 180) |######################| Elapsed Time: 0:01:51 Time:  0:01:51
+b"Preprocessing ['/mnt/datasets/de/clips/test.csv']"
+b'Preprocessing done'
+b'Computing acoustic model predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:03:05 Time:  0:03:05
+b'Decoding predictions...'
+N/A% (0 of 178) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (178 of 178) |######################| Elapsed Time: 0:07:02 Time:  0:07:02
+b'Test - WER: 1.000000, CER: 42.375468, loss: 216.524963'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 8.000000, loss: 54.965523'
+b' - src: "so sei es"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 11.000000, loss: 59.913506'
+b' - src: "hilf mir mal"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 11.000000, loss: 66.678764'
+b' - src: "guten morgen"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 12.000000, loss: 68.623405'
+b' - src: "mir doch egal"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 12.000000, loss: 68.944939'
+b' - src: "schwer zu sagen"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 10.000000, loss: 72.014107'
+b' - src: "auto starten"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 13.000000, loss: 72.236748'
+b' - src: "wo ist mein auto"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 12.000000, loss: 73.880409'
+b' - src: "tut es sehr weh"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 13.000000, loss: 74.407417'
+b' - src: "lasset uns beten"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'WER: 1.000000, CER: 12.000000, loss: 74.862427'
+b' - src: "wie alt bist du"'
+b' - res: "einerseits "'
+b'--------------------------------------------------------------------------------'
+b'I Exporting the model...'
+b'I Models exported at /home/ironbas3/Past_Models/de_lr_0.001_n_hidden_4096_dp_0.2/de_model_lr_0.001_n_hidden_4096_dp_0.2'
+Training number 14
+>>> Training with version_num: lr_1e-05_n_hidden_4096_dp_0.2
+b"Preprocessing ['/mnt/datasets/de/clips/train.csv']"
+b'Preprocessing done'
+b"Preprocessing ['/mnt/datasets/de/clips/dev.csv']"
+b'Preprocessing done'
+b'I STARTING Optimization'
+b'I Training epoch 0...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (415 of 415) |######################| Elapsed Time: 0:15:31 ETA:  00:00:00
+b'I Training of Epoch 0 - loss: 143.250886'
+100% (415 of 415) |######################| Elapsed Time: 0:15:31 Time:  0:15:31
+b'I Validating epoch 0...'
+N/A% (0 of 180) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
+100% (180 of 180) |######################| Elapsed Time: 0:01:44 ETA:  00:00:00
+b'I Validation of Epoch 0 - loss: 128.709483'
+100% (180 of 180) |######################| Elapsed Time: 0:01:48 Time:  0:01:48
+b'I Training epoch 1...'
+N/A% (0 of 415) |                        | Elapsed Time: 0:00:00 ETA:  --:--:--
