@@ -3,6 +3,10 @@
 *.tsv
 *.csv
 
+# Folders to ignore
+normalized_texts/
+previous_logs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
