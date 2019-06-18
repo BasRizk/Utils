@@ -9,7 +9,7 @@ import re
 #    print("Please enter file path.")
 #    
 
-log_filename = 'log_session_v8_4.log'
+log_filename = 'log_session_v9_10_1.log'
 old_lines = pd.read_csv(log_filename, sep="\t", header = None, engine='python', error_bad_lines=False)
 new_lines = []
 
