@@ -42,17 +42,12 @@ assert(path.exists(dev_files_path))
 assert(path.exists(test_files_path))
 assert(path.exists(lm_binary_path))
 assert(path.exists(lm_trie_path))
-assert(path.exists(checkpoint_dir_path))
-assert(path.exists(export_dir_path))
-assert(path.exists(summary_dir_path))
 #train_files_path = train_files_path_1 + "," + train_files_path_2
 
-log_filepath = path.join(glob_dir, "de_training_meta_log.txt")
+log_filepath = path.join(glob_dir, "en_training_meta_log.txt")
 
 num_of_trainings = 0
 
-# export_version = 6 tries exist
-# export_version = 8 tries exist
 def train_tune(drop_outs, n_hiddens, learning_rates, train_batch_sizes, epochs = 30, early_stop = True, export_version = 1):
     # DNN PARAMETERS
     display_step = 0
@@ -99,6 +94,11 @@ def train_tune(drop_outs, n_hiddens, learning_rates, train_batch_sizes, epochs =
                         prepare_dirs([model_dir,
                                       summary_dir,
                                       checkpoint_dir], sec_glob_dir, model_lang, version_num)
+    
+                    assert(path.exists(export_dir_path))
+                    assert(path.exists(summary_dir_path))
+                    assert(path.exists(checkpoint_dir_path))
+
                     training_command = [
                             'python', '-u', '/home/ironbas3/DeepSpeech/DeepSpeech.py',
                             '--alphabet_config_path', alphabet_config_path,
