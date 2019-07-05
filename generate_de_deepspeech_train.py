@@ -6,6 +6,7 @@ from utils import run_command, open_log_session, close_log_session
 from utils import prepare_dirs, log_training_command
 #import time
 
+DEEPSPEECH_VERSION="v0.5.1"
 # =============================================================================
 # Dataset Parameters
 # =============================================================================
@@ -53,7 +54,7 @@ num_of_trainings = 0
 
 # export_version = 6 tries exist
 # export_version = 8 tries exist
-def train_tune(drop_outs, n_hiddens, learning_rates, train_batch_sizes, epoch = 30, early_stop = True, export_version = 1):
+def train_tune(drop_outs, n_hiddens, learning_rates, train_batch_sizes, epochs = 30, early_stop = True, export_version = 1):
     # DNN PARAMETERS
     display_step = 0
     validation_step = 1 
@@ -107,7 +108,7 @@ def train_tune(drop_outs, n_hiddens, learning_rates, train_batch_sizes, epoch = 
                             '--train_batch_size', str(train_batch_size),
                             '--dev_batch_size', str(dev_batch_size),
                             '--test_batch_size', str(test_batch_size),
-                            '--epoch', str(epoch),
+                            '--epochs', str(epochs),
                             '--n_hidden', str(n_hidden),
                             '--learning_rate', str(learning_rate),
                             '--display_step', str(display_step),
