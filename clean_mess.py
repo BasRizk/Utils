@@ -5,6 +5,7 @@ import re
 
 non_alphabet = r"[^A-Z ^a-z ^']+"
 num_non_alphabet_lines = 0
+
 def label_filter(label):
     global non_alphabet
     global num_non_alphabet_lines
@@ -14,7 +15,7 @@ def label_filter(label):
         num_non_alphabet_lines += 1    
     return new_label
     
-for i in [0]:
+for i in [0, 1, 2]:
     filename = "transcripts_0" + str(i) + ".csv"
     ds = pd.read_csv(filename, sep=";", header =None)
     

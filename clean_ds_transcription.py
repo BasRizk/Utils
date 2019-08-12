@@ -2,6 +2,7 @@
 import pandas as pd
 import os
 
+trans_label = "transcript"
 toChangeStr = "^"
 toBeStr = ""
 num_edited_lines = 0
@@ -24,7 +25,7 @@ for a_dir in os.listdir():
         ds = pd.read_csv(csvfile, sep=",")
         
         num_edited_lines = 0
-        ds["transcript"] = ds["transcript"].map(label_filter)
+        ds[trans_label] = ds[trans_label].map(label_filter)
         print("File: " + csvfile + " Edited lines = " + str(num_edited_lines))
             
         edited_filename = csvfile +"_edited.csv"
